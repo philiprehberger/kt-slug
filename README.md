@@ -1,6 +1,6 @@
 # kt-slug
 
-[![CI](https://github.com/philiprehberger/kt-slug/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/kt-slug/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/kt-slug/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-slug/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/slug)](https://central.sonatype.com/artifact/com.philiprehberger/slug)
 
 URL-friendly slug generation from Unicode strings with transliteration.
