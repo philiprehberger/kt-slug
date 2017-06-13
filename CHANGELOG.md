@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-03-18
+
+### Added
+- `isValidSlug()` function to check if a string is already a valid slug
+- `slugifyAll()` batch function to generate slugs for a list of strings
+- `NormalizationForm` enum with NFC, NFD, NFKC, NFKD options
+- `SlugConfig.normalizationForm` property to configure Unicode normalization
+- Support for configurable separator in `isValidSlug()`
+
+### Changed
+- Unicode normalization is now always applied (previously only when `transliterate` was enabled)
+- Improved handling of empty separator edge cases
+
 ## [0.1.1] - 2026-03-18
 
 - Fix CI badge and gradlew permissions
