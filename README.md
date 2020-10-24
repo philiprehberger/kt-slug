@@ -1,9 +1,8 @@
 # slug
 
 [![Tests](https://github.com/philiprehberger/kt-slug/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-slug/actions/workflows/publish.yml)
-[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/slug)](https://central.sonatype.com/artifact/com.philiprehberger/slug)
-[![License](https://img.shields.io/github/license/philiprehberger/kt-slug)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/slug.svg)](https://central.sonatype.com/artifact/com.philiprehberger/slug)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/kt-slug)](https://github.com/philiprehberger/kt-slug/commits/main)
 
 URL-friendly slug generation from Unicode strings with transliteration, validation, and batch processing.
 
@@ -125,6 +124,24 @@ val uniqueSlug = uniqueSlug("hello-world") { candidate ->
 ./gradlew build      # Build JAR
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/kt-slug)
+
+🐛 [Report issues](https://github.com/philiprehberger/kt-slug/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/kt-slug/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
