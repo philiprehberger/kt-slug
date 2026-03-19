@@ -19,7 +19,7 @@ package com.philiprehberger.slug
  * @param exists a suspend function that returns `true` if the candidate slug is already taken
  * @return a unique slug string
  */
-suspend fun uniqueSlug(
+public suspend fun uniqueSlug(
     base: String,
     config: SlugConfig.() -> Unit = {},
     exists: suspend (String) -> Boolean,

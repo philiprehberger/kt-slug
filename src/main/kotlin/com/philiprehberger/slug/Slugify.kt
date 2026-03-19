@@ -5,7 +5,7 @@ import java.text.Normalizer
 /**
  * Unicode normalization form used during slug generation.
  */
-enum class NormalizationForm {
+public enum class NormalizationForm {
     /** Canonical Decomposition, followed by Canonical Composition. */
     NFC,
     /** Canonical Decomposition. */
@@ -33,13 +33,13 @@ enum class NormalizationForm {
  * @property normalizationForm the Unicode normalization form to use (default: [NormalizationForm.NFD])
  * @property customReplacements a map of custom string replacements applied before slugification
  */
-class SlugConfig {
-    var separator: String = "-"
-    var maxLength: Int = 0
-    var lowercase: Boolean = true
-    var transliterate: Boolean = true
-    var normalizationForm: NormalizationForm = NormalizationForm.NFD
-    var customReplacements: Map<String, String> = emptyMap()
+public class SlugConfig {
+    public var separator: String = "-"
+    public var maxLength: Int = 0
+    public var lowercase: Boolean = true
+    public var transliterate: Boolean = true
+    public var normalizationForm: NormalizationForm = NormalizationForm.NFD
+    public var customReplacements: Map<String, String> = emptyMap()
 }
 
 /**
@@ -65,7 +65,7 @@ class SlugConfig {
  * @param config optional configuration block
  * @return the generated slug, or an empty string if the input produces no valid characters
  */
-fun slug(input: String, config: SlugConfig.() -> Unit = {}): String {
+public fun slug(input: String, config: SlugConfig.() -> Unit = {}): String {
     val cfg = SlugConfig().apply(config)
 
     if (input.isBlank()) return ""
@@ -124,7 +124,7 @@ fun slug(input: String, config: SlugConfig.() -> Unit = {}): String {
  * @param config optional configuration block applied to all inputs
  * @return a list of generated slugs
  */
-fun slugifyAll(inputs: List<String>, config: SlugConfig.() -> Unit = {}): List<String> {
+public fun slugifyAll(inputs: List<String>, config: SlugConfig.() -> Unit = {}): List<String> {
     return inputs.map { slug(it, config) }
 }
 
@@ -146,7 +146,7 @@ fun slugifyAll(inputs: List<String>, config: SlugConfig.() -> Unit = {}): List<S
  * @param separator the separator character to allow (default: `"-"`)
  * @return `true` if the string is a valid slug
  */
-fun isValidSlug(value: String, separator: String = "-"): Boolean {
+public fun isValidSlug(value: String, separator: String = "-"): Boolean {
     if (value.isEmpty()) return false
 
     val sep = Regex.escape(separator)
