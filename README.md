@@ -1,13 +1,10 @@
-# kt-slug
+# slug
 
 [![CI](https://github.com/philiprehberger/kt-slug/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-slug/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/slug)](https://central.sonatype.com/artifact/com.philiprehberger/slug)
+[![License](https://img.shields.io/github/license/philiprehberger/kt-slug)](LICENSE)
 
 URL-friendly slug generation from Unicode strings with transliteration, validation, and batch processing.
-
-## Requirements
-
-- Kotlin 1.9+ / Java 17+
 
 ## Installation
 
@@ -15,7 +12,7 @@ URL-friendly slug generation from Unicode strings with transliteration, validati
 
 ```kotlin
 dependencies {
-    implementation("com.philiprehberger:slug:0.2.0")
+    implementation("com.philiprehberger:slug:0.2.2")
 }
 ```
 
@@ -33,7 +30,7 @@ dependencies {
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>slug</artifactId>
-    <version>0.2.0</version>
+    <version>0.2.2</version>
 </dependency>
 ```
 
